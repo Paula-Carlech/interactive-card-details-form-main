@@ -4,7 +4,7 @@
 
 :root{
     --Grotesk-font: font-family: 'Space Grotesk', sans-serif;
-    
+
     --Light_grayish_violet: hsl(270, 3%, 87%);
     --Dark_grayish_violet: hsl(279, 6%, 55%);
     --Very_dark_violet: hsl(278, 68%, 11%);
@@ -14,5 +14,37 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: var(--Grotesk-font);
+    }
 
+    main{
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+    }
+
+    section{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .imagem{
+        height: 40vh;
+        margin-top: 0;
+
+        background-image: url(../images/bg-main-mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .formulario{
+        margin-bottom: 0;
+        height: 60vh;
+    }
 }

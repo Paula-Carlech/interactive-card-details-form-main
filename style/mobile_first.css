@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root{
+    --Grotesk-font: font-family: 'Space Grotesk', sans-serif;
+    
+    --Light_grayish_violet: hsl(270, 3%, 87%);
+    --Dark_grayish_violet: hsl(279, 6%, 55%);
+    --Very_dark_violet: hsl(278, 68%, 11%);
+    --Red: hsl(0, 100%, 66%); /*input errors*/
+    /*Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)*/
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+
+}

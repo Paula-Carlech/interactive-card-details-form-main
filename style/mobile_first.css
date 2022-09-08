@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
 :root{
-    --Grotesk-font: font-family: 'Space Grotesk', sans-serif;
+    --Grotesk-font: 'Space Grotesk', sans-serif;
 
     --Light_grayish_violet: hsl(270, 3%, 87%);
     --Dark_grayish_violet: hsl(279, 6%, 55%);
@@ -12,39 +12,87 @@
     /*Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)*/
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 600px) {
-    *{
-        padding: 0;
-        margin: 0;
-        font-family: var(--Grotesk-font);
-    }
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Grotesk-font);
+    font-size: 18px;
+    color: white;
+}
 
-    main{
-        height: 100vh;
-        width: 100vw;
-        background-color: white;
-    }
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
 
-    section{
-        width: 100vw;
-        padding: 0;
-        margin: 0;
-        background-color: transparent;
-    }
+section{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
 
-    .imagem{
-        height: 40vh;
-        margin-top: 0;
+.imagem{
+    height: 30vh;
 
-        background-image: url(../images/bg-main-mobile.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    background-image: url(../images/bg-main-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
-    .formulario{
-        margin-bottom: 0;
-        height: 60vh;
-    }
+img#card-back{
+    max-width: 340px;
+    position: absolute;
+    top: 10%;
+    left: 12%;
+}
+
+p#CV{
+    position: relative;
+    top: 110px;
+    left: 315px;
+    font-size: 15px;
+}
+
+img#card-front{
+    max-width: 340px;
+    position: absolute;
+    top: 16%;
+    left: 5%;
+}
+
+img#logo{
+    position: absolute;
+    max-width: 70px;
+    top: 19%;
+    left: 8%;
+}
+
+p#card-number{
+    position: relative;
+    font-size: 25px;
+    top: -3%;
+    left: 12%;
+}
+
+p#name{
+    position: relative;
+    top: -1%;
+    left: 12%;
+    font-size: 12px;
+}
+
+p#date{
+    position: relative;
+    top: -2.5%;
+    left: 72%;
+    font-size: 12px;
+}
+
+.formulario{
+    margin-bottom: 0;
 }

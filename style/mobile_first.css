@@ -20,6 +20,10 @@
     color: white;
 }
 
+html, body{
+    overflow: hidden;
+}
+
 main{
     height: 100vh;
     width: 100vw;
@@ -53,7 +57,7 @@ img#card-back{
 
 p#CV{
     position: relative;
-    top: 110px;
+    top: 109px;
     left: 315px;
     font-size: 15px;
 }
@@ -95,4 +99,9 @@ p#date{
 
 .formulario{
     margin-bottom: 0;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }

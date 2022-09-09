@@ -26,20 +26,20 @@
             <form action="form.php" method="post" autocomplete="on">
                 <p id="cardholder_name">
                     <label for="iname">CARDHOLDER NAME</label> <br>
-                    <input type="text" name="cardholder_name" id="iname" maxlength="50" placeholder="  e.g. Jane Appleseed" required>
+                    <input type="text" name="cardholder_name" id="iname" maxlength="50" placeholder="  e.g. Jane Appleseed" autocomplete="name" required>
                 </p>
                 <p id="card_number">
                     <label for="inumber">CARD NUMBER</label> <br>
-                    <input type="number" name="card_number" id="inumber" placeholder="  e.g. 1234 5678 9123 0000" required>
+                    <input type="number" name="card_number" id="inumber" placeholder="  e.g. 1234 5678 9123 0000" autocomplete="cc-number" required>
                 </p>
                 <p id="expiration_date">
                     <label for="idate">EXP. DATE (MM/YY)</label> <br>
-                    <input type="number" name="month" id="idate" max="2" placeholder="  MM" required>
-                    <input type="number" name="year" id="idate" max="2" placeholder="  YY" required>
+                    <input type="number" name="month" id="idate" max="2" placeholder="  MM" autocomplete="cc-exp-month" required>
+                    <input type="number" name="year" id="idate" max="2" placeholder="  YY" autocomplete="cc-exp-year" required>
                 </p>
                 <p id="cvc_number">
                     <label for="icvc">CVC</label> <br>
-                    <input type="number" name="cvc" id="icvc" max="3" placeholder="  e.g. 123" required>
+                    <input type="number" name="cvc" id="icvc" max="3" placeholder="  e.g. 123" autocomplete="cc-csc" required>
                 </p>
                 <p id="button">
                     <input type="button" value="Confirm">

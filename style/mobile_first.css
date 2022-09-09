@@ -113,6 +113,7 @@ form > p > label{
 
 form > p > input{
     border: solid 1px var(--Light_grayish_violet);
+    color: gray;
     width: 80vw;
     height: 5vh;
     margin-top: 15px;
@@ -125,7 +126,7 @@ form > p#expiration_date > input{
 
 form > P#cvc_number{
     position: absolute;
-    top: 50%;
+    top: 51.5%;
     left: 48%;
 }
 
@@ -140,7 +141,7 @@ form > p#button > input{
     border: none;
     border-radius: 10px;
     margin-left: 25px;
-    margin-top: 40px;
+    margin-top: 30px;
     width: 70vw;
     height: 5vh;
 }

@@ -98,7 +98,56 @@ p#date{
 }
 
 .formulario{
-    margin-bottom: 0;
+    margin: 25px;
+    margin-left: 40px;
+    position: relative;
+}
+
+form{
+    margin-top: 70px;
+}
+
+form > p > label{
+    color: var(--Very_dark_violet);
+}
+
+form > p > input{
+    border: solid 1px var(--Light_grayish_violet);
+    width: 80vw;
+    height: 5vh;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+form > p#expiration_date > input{
+    width: 15vw;
+}
+
+form > P#cvc_number{
+    position: absolute;
+    top: 50%;
+    left: 48%;
+}
+
+form > p#cvc_number > input{
+    width: 35vw;
+}
+
+form > p#button > input{
+    color: white;
+    font-size: 20px;
+    background-color: var(--Very_dark_violet);
+    border: none;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 40px;
+    width: 70vw;
+    height: 5vh;
+}
+
+form > p#button:hover > input{
+    background-color: var(--Dark_grayish_violet);
+    color: var(--Very_dark_violet);
 }
 
 ::-webkit-scrollbar{

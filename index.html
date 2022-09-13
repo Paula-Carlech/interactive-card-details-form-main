@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/mobile_first.css">
     <link rel="stylesheet" href="style/media_querys.css">
 </head>
-<body>
+<body onload="">
     <main>
         <section class="imagem">
             <img id="card-back" src="images/bg-card-back.png" alt="card back">
@@ -23,7 +23,7 @@
         <p id="date">00/00</p>
 
         <section class="formulario">
-            <form action="form.php" method="post" autocomplete="on">
+            <form action="form.php" method="post" autocomplete="on" id="form">
                 <p id="cardholder_name">
                     <label for="iname">CARDHOLDER NAME</label> <br>
                     <input type="text" name="cardholder_name" id="iname" maxlength="50" placeholder="  e.g. Jane Appleseed" autocomplete="name" required>
@@ -41,11 +41,18 @@
                     <label for="icvc">CVC</label> <br>
                     <input type="number" name="cvc" id="icvc" max="3" placeholder="  e.g. 123" autocomplete="cc-csc" required>
                 </p>
-                <p id="button">
+                <p id="button" onclick="confirmButton()">
                     <input type="button" value="Confirm">
                 </p>
             </form>
+            <div id="final" style="display: none;">
+                <img src="images/icon-complete.svg" alt="Check">
+                <p>Thank You!</p>
+                <p id="phrase">We´ve added your card details!</p>
+                <input type="button" value="Continue" id="button02" onclick="continueButton()">
+            </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

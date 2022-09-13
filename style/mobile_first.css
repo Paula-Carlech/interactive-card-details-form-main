@@ -134,7 +134,7 @@ form > p#cvc_number > input{
     width: 35vw;
 }
 
-form > p#button > input{
+form > p#button > input, .formulario > div > input#button02{
     color: white;
     font-size: 20px;
     background-color: var(--Very_dark_violet);
@@ -146,9 +146,31 @@ form > p#button > input{
     height: 5vh;
 }
 
-form > p#button:hover > input{
+.formulario > div > input#button02{
+    margin-top: 100px;
+}
+
+form > p#button:hover > input, .formulario > div > input#button02:hover{
     background-color: var(--Dark_grayish_violet);
     color: var(--Very_dark_violet);
+}
+
+div#final > img{
+    margin-left: 105px;
+    padding: 20px;
+}
+
+div#final > p{
+    color: var(--Very_dark_violet);
+    text-align: center;
+    font-size: 35px;
+    margin-left: -75px;
+    margin-bottom: 20px;
+}
+
+div#final > p#phrase{
+    color: gray;
+    font-size: 18px;
 }
 
 ::-webkit-scrollbar{

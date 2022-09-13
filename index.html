@@ -30,16 +30,16 @@
                 </p>
                 <p id="card_number">
                     <label for="inumber">CARD NUMBER</label> <br>
-                    <input type="number" name="card_number" id="inumber" placeholder="  e.g. 1234 5678 9123 0000" autocomplete="cc-number" required>
+                    <input type="number" name="card_number" id="inumber" maxlength="16" placeholder="  e.g. 1234 5678 9123 0000" autocomplete="cc-number" required>
                 </p>
                 <p id="expiration_date">
                     <label for="idate">EXP. DATE (MM/YY)</label> <br>
-                    <input type="number" name="month" id="idate" max="2" placeholder="  MM" autocomplete="cc-exp-month" required>
-                    <input type="number" name="year" id="idate" max="2" placeholder="  YY" autocomplete="cc-exp-year" required>
+                    <input type="number" name="month" id="idate" maxlength="2" placeholder="  MM" autocomplete="cc-exp-month" required>
+                    <input type="number" name="year" id="idate" maxlength="2" placeholder="  YY" autocomplete="cc-exp-year" required>
                 </p>
                 <p id="cvc_number">
                     <label for="icvc">CVC</label> <br>
-                    <input type="number" name="cvc" id="icvc" max="3" placeholder="  e.g. 123" autocomplete="cc-csc" required>
+                    <input type="number" name="cvc" id="icvc" maxlength="3" placeholder="  e.g. 123" autocomplete="cc-csc" required>
                 </p>
                 <p id="button" onclick="confirmButton()">
                     <input type="button" value="Confirm">

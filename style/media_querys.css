@@ -2,10 +2,190 @@
 
 /* Medium devices (landscape tablets, 769px and up) */
 @media screen and (min-width: 769px) {
+    img#card-back{
+        max-width: 400px;
+        position: absolute;
+        top: 10%;
+        left: 35%;
+    }
+    
+    p#CV{
+        position: relative;
+        top: 125px;
+        left: 575px;
+        font-size: 15px;
+    }
+    
+    img#card-front{
+        max-width: 400px;
+        position: absolute;
+        top: 18%;
+        left: 25%;
+    }
+    
+    img#logo{
+        position: absolute;
+        max-width: 75px;
+        top: 20%;
+        left: 28%;
+    }
+    
+    p#card-number{
+        position: relative;
+        font-size: 25px;
+        top: 0%;
+        left: 33%;
+    }
+    
+    p#name{
+        position: relative;
+        top: 3%;
+        left: 30%;
+        font-size: 13px;
+    }
+    
+    p#date{
+        position: relative;
+        top: 1%;
+        left: 67%;
+        font-size: 13px;
+    }
 
+    .formulario{
+        margin: 25px;
+        margin-left: 70px;
+        position: relative;
+    }
+    
+    form{
+        margin-top: 85px;
+    }
+
+    div#final > img{
+        margin-left: 250px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    
+    div#final > p{
+        font-size: 40px;
+        margin-left: -135px;
+        margin-bottom: 10px;
+    }
+
+    form > p#button:hover > input, .formulario > div > input#button02{
+        margin-left: 55px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+    .imagem{
+        background-image: url(../images/bg-main-mobile.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
 
+        height: 100vh;
+        width: 40vw;
+    }
+
+    img#card-back{
+        max-width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+    }
+    
+    p#CV{
+        position: relative;
+        top: 490px;
+        left: 730px;
+        font-size: 15px;
+    }
+    
+    img#card-front{
+        max-width: 450px;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+    }
+    
+    img#logo{
+        position: absolute;
+        max-width: 75px;
+        top: 20%;
+        left: 17%;
+    }
+    
+    p#card-number{
+        position: relative;
+        font-size: 25px;
+        top: -67%;
+        left: 20%;
+    }
+    
+    p#name{
+        position: relative;
+        top: -64%;
+        left: 18%;
+        font-size: 13px;
+    }
+    
+    p#date{
+        position: relative;
+        top: -66%;
+        left: 36%;
+        font-size: 13px;
+    }
+
+    .formulario{
+        margin: 25px;
+        position: relative;
+        top: -95%;
+        left: 53%;
+    }
+
+    form > p > input{
+        width: 40vw;
+    }
+
+    form > p#expiration_date > input{
+        width: 5vw;
+    }
+    
+    form > P#cvc_number{
+        left: 15%;
+    }
+    
+    form > p#cvc_number > input{
+        width: 15vw;
+    }
+
+    form > p#button > input{
+        margin-left: 80px;
+        width: 30vw;
+    }
+
+    form > p#button:hover > input{
+        width: 30vw;
+    }
+
+    div#final > img{
+        margin-left: 240px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    
+    div#final > p{
+        font-size: 40px;
+        margin-left: -1000px;
+        margin-bottom: 10px;
+    }
+
+    form > p#button:hover > input, .formulario > div > input#button02{
+        margin-left: 50px;
+        width: 500px;
+    }
 }
